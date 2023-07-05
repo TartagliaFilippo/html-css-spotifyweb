@@ -56,6 +56,18 @@ body {
   align-items: center;
 }
 
+#footer .col {
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--margin-l);
+}
+
+#footer .col:nth-child(2) {
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--margin-l);
+}
+
 /* DEBUG */
 .bordered {
   border: 1px dashed red;
