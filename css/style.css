@@ -21,10 +21,48 @@
 }
 
 body {
+  max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
 }
 
 /* UTILS */
+.flex {
+  display: flex;
+}
+
+.container {
+  padding: 0 var(--margin-m);
+}
 
 /* STRUCTURE */
+/* FOOTER */
+#footer {
+  background-color: var(--footer);
+  height: 80px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+
+  flex-direction: column;
+  justify-content: center;
+}
+
+#footer .row {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* DEBUG */
+.bordered {
+  border: 1px dashed red;
+}
+
+.bc-blue {
+  background-color: blue;
+  min-height: 50px;
+  min-width: 50px;
+}
