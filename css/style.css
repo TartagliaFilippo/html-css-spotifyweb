@@ -26,6 +26,14 @@ body {
   margin-right: auto;
 }
 
+img {
+  width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
 /* UTILS */
 .invisible {
   display: none;
@@ -65,10 +73,18 @@ body {
 
 /* MAIN */
 #main {
-  width: calc(- 300px 100%);
+  position: relative;
+  width: calc(100% -300px);
   height: calc(100vh - 80px);
+  left: 300px;
 
   flex-direction: column;
+}
+
+/* MAIN_CONTENT */
+#main-content ul {
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* FOOTER */
@@ -113,6 +129,10 @@ body {
 
   #side-bar .row.invisible {
     display: flex;
+  }
+  /* MAIN */
+  #main {
+    left: 50px;
   }
 }
 
