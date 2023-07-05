@@ -1,4 +1,19 @@
 /* GENERICS */
+:root {
+  /* PALETTE COLORI */
+  --white: #ffffff;
+  --black: #000000;
+  --background: #141922;
+  --footer: #282828;
+  --text: #333333;
+  --fluo: #adff2f;
+
+  /* MISURE STANDARD */
+  --margin-s: 5px;
+  --margin-m: 15px;
+  --margin-l: 25px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,8 +21,8 @@
 }
 
 body {
-  width: 1180px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* UTILS */
