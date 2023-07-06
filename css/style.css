@@ -304,6 +304,90 @@ a {
   background-image: url(../img/sinister.jpeg);
 }
 
+/* USER */
+#user {
+  width: 100%;
+  color: var(--white);
+  padding: 0 1rem;
+}
+
+#user > p {
+  color: var(--empty);
+}
+
+#user .row {
+  margin: 0 -0.5rem;
+}
+
+#user .col {
+  width: calc(100% / 6);
+  margin: 0 0.5rem;
+  min-height: 120px;
+}
+
+#user .cards-image {
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  aspect-ratio: 1;
+  margin-bottom: 10px;
+}
+
+#user .cards p {
+  color: var(--empty);
+}
+
+#user .cards-image.first {
+  background-image: url(../img/radar.jpeg);
+}
+
+#user .cards-image.second {
+  background-image: url(../img/mixdaily.jpeg);
+}
+
+/* POP */
+#pop {
+  width: 100%;
+  color: var(--white);
+  padding: 0 1rem;
+  margin-bottom: 100px;
+}
+
+#pop > p {
+  color: var(--empty);
+}
+
+#pop .row {
+  margin: 0 -0.5rem;
+}
+
+#pop .col {
+  width: calc(100% / 6);
+  margin: 0 0.5rem;
+  min-height: 120px;
+}
+
+#pop .cards-image {
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+#pop .cards p {
+  color: var(--empty);
+}
+
+#pop .cards-image.first {
+  background-image: url(../img/youg.jpeg);
+}
+
+#pop .cards-image.second {
+  background-image: url(../img/einaudi.jpeg);
+}
+
 /* FOOTER */
 #footer {
   background-color: var(--footer);
@@ -427,6 +511,26 @@ a {
     width: calc((100% - 4rem) / 4);
     min-height: 100px;
   }
+
+  /* USER */
+  #user .row {
+    flex-wrap: wrap;
+  }
+
+  #user .col {
+    width: calc((100% - 4rem) / 4);
+    min-height: 100px;
+  }
+
+  /* POP */
+  #pop .row {
+    flex-wrap: wrap;
+  }
+
+  #pop .col {
+    width: calc((100% - 4rem) / 4);
+    min-height: 100px;
+  }
 }
 
 /* S */
@@ -443,6 +547,26 @@ a {
   }
 
   #recent .col {
+    width: calc((100% - 2rem) / 2);
+    min-height: 100px;
+  }
+
+  /* USER */
+  #user .row {
+    flex-wrap: wrap;
+  }
+
+  #user .col {
+    width: calc((100% - 2rem) / 2);
+    min-height: 100px;
+  }
+
+  /* POP */
+  #pop .row {
+    flex-wrap: wrap;
+  }
+
+  #pop .col {
     width: calc((100% - 2rem) / 2);
     min-height: 100px;
   }
@@ -492,7 +616,7 @@ a {
 }
 
 /* DEBUG */
-.bordered {
+/* .bordered {
   border: 1px dashed red;
 }
 
@@ -506,4 +630,4 @@ a {
   background-color: green;
   min-height: 20px;
   min-width: 20px;
-}
+} */
