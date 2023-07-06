@@ -26,6 +26,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   font-family: "Montserrat", sans-serif;
+  background-color: var(--black);
 }
 
 img {
@@ -152,10 +153,12 @@ a {
   font-weight: bold;
   flex-direction: column;
   gap: 10px;
+  height: 35vh;
+  overflow: auto;
 }
 
 .side-nd li:first-child {
-  margin: 5px 0;
+  margin: 20px 0;
 }
 
 .side-nd li:first-child i {
@@ -311,12 +314,18 @@ a {
   padding: 0 1rem;
 }
 
+#user > h3 {
+  margin: 20px 0;
+}
+
 #user > p {
   color: var(--empty);
 }
 
 #user .row {
   margin: 0 -0.5rem;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 #user .col {
@@ -353,12 +362,18 @@ a {
   margin-bottom: 100px;
 }
 
+#pop > h3 {
+  margin: 20px 0;
+}
+
 #pop > p {
   color: var(--empty);
 }
 
 #pop .row {
   margin: 0 -0.5rem;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 #pop .col {
