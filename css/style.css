@@ -3,7 +3,7 @@
   /* PALETTE COLORI */
   --white: #ffffff;
   --black: rgb(0, 0, 0);
-  --background: #141922;
+  --background: #252525;
   --footer: #282828;
   --text: #333333;
   --fluo: #adff2f;
@@ -232,9 +232,19 @@ a {
 }
 
 /* MAIN_CONTENT */
+#main-content {
+  background-color: var(--background);
+}
+
+#main-content .nav-main {
+  color: var(--empty);
+  line-height: 50px;
+}
+
 #main-content ul {
   justify-content: center;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
 /* FOOTER */
