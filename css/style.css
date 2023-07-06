@@ -52,12 +52,12 @@ li {
 
 /* BAR */
 .progress-bar {
-  width: 300px;
+  max-width: 300px;
   min-width: 80px;
 }
 
 .progress-bar.small {
-  width: 100px;
+  max-width: 150px;
   min-width: 50px;
 }
 
@@ -162,6 +162,10 @@ li {
   justify-content: space-between;
 }
 
+#footer .col:first-child {
+  gap: 30px;
+}
+
 #footer .col:nth-child(2) {
   flex-direction: column;
   justify-content: center;
@@ -169,11 +173,11 @@ li {
 
 #footer .col:last-child {
   align-items: center;
+  gap: 20px;
 }
 
 .card-left {
   align-items: center;
-  margin-right: 35px;
 }
 
 .card-right {
@@ -188,20 +192,13 @@ li {
 .card-top {
   justify-content: center;
   align-items: center;
+  gap: 30px;
   margin-bottom: 10px;
-}
-
-.card-top .icons {
-  margin: 0 20px;
 }
 
 .card-bottom {
   justify-content: center;
   align-items: center;
-}
-
-.col:last-child .icons {
-  margin: 10px;
 }
 
 /* STYLE */
@@ -212,7 +209,7 @@ li {
 
 .card-left .exhibit h5 {
   color: var(--white);
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .card-left .exhibit p {
@@ -267,6 +264,18 @@ li {
 
 /* MD */
 @media screen and (max-width: 878px) {
+  /* FOOTER */
+  #footer .col:first-child {
+    gap: 15px;
+  }
+
+  #footer .col:last-child {
+    gap: 10px;
+  }
+
+  .card-top {
+    gap: 15px;
+  }
 }
 
 /* DEBUG */
