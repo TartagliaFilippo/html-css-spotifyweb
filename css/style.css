@@ -233,7 +233,6 @@ a {
 /* MAIN_CONTENT */
 #main-content {
   background-color: var(--background);
-  padding: 0 1rem;
 }
 
 /* NAV-MAIN */
@@ -251,17 +250,58 @@ a {
 /* RECENT */
 #recent {
   width: 100%;
-  padding: 0 1 rem;
+  color: var(--white);
+  padding: 0 1rem;
+}
+
+#recent > h3 {
+  margin: 20px 0;
 }
 
 #recent .row {
-  margin: 0 -1rem;
+  margin: 0 -0.5rem;
 }
 
 #recent .col {
   width: calc(100% / 6);
-  margin: 0 1rem;
+  margin: 0 0.5rem;
   min-height: 120px;
+}
+
+#recent .cards-image {
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  aspect-ratio: 1;
+  margin-bottom: 10px;
+}
+
+#recent .cards p {
+  color: var(--empty);
+}
+
+#recent .cards-image.first {
+  background-image: url(../img/metal_lifting.jpg);
+}
+
+#recent .cards-image.second {
+  background-image: url(../img/stranger.jpeg);
+}
+
+#recent .cards-image.third {
+  background-image: url(../img/aquietplace.jpeg);
+}
+
+#recent .cards-image.fourth {
+  background-image: url(../img/split.jpeg);
+}
+
+#recent .cards-image.fifth {
+  background-image: url(../img/cure.jpeg);
+}
+
+#recent .cards-image.sixth {
+  background-image: url(../img/sinister.jpeg);
 }
 
 /* FOOTER */
@@ -384,7 +424,7 @@ a {
   }
 
   #recent .col {
-    width: calc((100% - 8rem) / 4);
+    width: calc((100% - 4rem) / 4);
     min-height: 100px;
   }
 }
@@ -403,7 +443,7 @@ a {
   }
 
   #recent .col {
-    width: calc((100% - 4rem) / 2);
+    width: calc((100% - 2rem) / 2);
     min-height: 100px;
   }
 }
