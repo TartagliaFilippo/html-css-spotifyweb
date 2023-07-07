@@ -300,30 +300,6 @@ a {
   color: var(--empty);
 }
 
-/* #recent .cards-image.first {
-  background-image: url(../img/metal_lifting.jpg);
-}
-
-#recent .cards-image.second {
-  background-image: url(../img/stranger.jpeg);
-}
-
-#recent .cards-image.third {
-  background-image: url(../img/aquietplace.jpeg);
-}
-
-#recent .cards-image.fourth {
-  background-image: url(../img/split.jpeg);
-}
-
-#recent .cards-image.fifth {
-  background-image: url(../img/cure.jpeg);
-}
-
-#recent .cards-image.sixth {
-  background-image: url(../img/sinister.jpeg);
-} */
-
 /* USER */
 #user {
   width: 100%;
@@ -360,14 +336,6 @@ a {
 #user .cards p {
   color: var(--empty);
 }
-
-/* #user .cards-image.first {
-  background-image: url(../img/radar.jpeg);
-}
-
-#user .cards-image.second {
-  background-image: url(../img/mixdaily.jpeg);
-} */
 
 /* POP */
 #pop {
@@ -408,14 +376,6 @@ a {
 #pop .cards p {
   color: var(--empty);
 }
-
-/* #pop .cards-image.first {
-  background-image: url(../img/youg.jpeg);
-}
-
-#pop .cards-image.second {
-  background-image: url(../img/einaudi.jpeg);
-} */
 
 /* FOOTER */
 #footer {
@@ -669,19 +629,44 @@ a {
   }
 }
 
-/* DEBUG */
-/* .bordered {
-  border: 1px dashed red;
+/* HOVER */
+/* MAIN */
+#recent .cards-image.first:hover {
+  opacity: 0.3;
 }
 
-.bc-blue {
-  background-color: blue;
-  min-height: 50px;
-  min-width: 50px;
+#recent .cards-image.second:hover {
+  opacity: 0.3;
 }
 
-.bc-red {
-  background-color: green;
-  min-height: 20px;
-  min-width: 20px;
-} */
+#recent .cards-image.third:hover {
+  opacity: 0.3;
+}
+
+#recent .cards-image.fourth:hover {
+  opacity: 0.3;
+}
+
+#recent .cards-image.fifth:hover {
+  opacity: 0.3;
+}
+
+#recent .cards-image.sixth:hover {
+  opacity: 0.3;
+}
+
+#user .cards-image.first:hover {
+  opacity: 0.3;
+}
+
+#user .cards-image.second:hover {
+  opacity: 0.3;
+}
+
+#pop .cards-image.first:hover {
+  opacity: 0.3;
+}
+
+#pop .cards-image.second:hover {
+  opacity: 0.3;
+}
