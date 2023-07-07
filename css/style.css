@@ -61,13 +61,11 @@ a {
 
 /* BAR */
 .progress-bar {
-  max-width: 300px;
-  min-width: 80px;
+  min-width: 370px;
 }
 
 .progress-bar.small {
-  max-width: 150px;
-  min-width: 50px;
+  min-width: 100px;
 }
 
 .bar-empty {
@@ -450,7 +448,7 @@ a {
 }
 
 #footer .col:first-child {
-  gap: 30px;
+  gap: 10px;
 }
 
 #footer .col:nth-child(2) {
@@ -533,6 +531,14 @@ a {
     gap: 15px;
   }
 
+  .progress-bar {
+    min-width: 200px;
+  }
+
+  .progress-bar.small {
+    min-width: 70px;
+  }
+
   /* RECENT */
   #recent .row {
     flex-wrap: wrap;
@@ -572,6 +578,14 @@ a {
     justify-content: center;
   }
 
+  .progress-bar {
+    min-width: 100px;
+  }
+
+  .progress-bar.small {
+    min-width: 50px;
+  }
+
   /* RECENT */
   #recent .row {
     flex-wrap: wrap;
@@ -605,6 +619,15 @@ a {
 
 /* XS */
 @media screen and (max-width: 552px) {
+  /* FOOTER */
+  .progress-bar {
+    min-width: 70px;
+  }
+
+  .progress-bar.small {
+    min-width: 40px;
+  }
+
   /* A-SIDE */
   #side-bar {
     width: 50px;
