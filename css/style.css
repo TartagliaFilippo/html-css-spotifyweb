@@ -26,7 +26,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   font-family: "Montserrat", sans-serif;
-  background-color: var(--black);
 }
 
 img {
@@ -39,6 +38,10 @@ li {
 
 a {
   text-decoration: none;
+}
+
+.wrapper {
+  background-color: var(--black);
 }
 
 /* UTILS */
