@@ -266,15 +266,13 @@ a {
 }
 
 #recent .col {
-  width: calc(100% / 6);
+  width: calc((100% - 6rem) / 6);
   margin: 0 0.5rem;
   min-height: 120px;
 }
 
 #recent .cards-image {
   background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
   aspect-ratio: 1;
   margin-bottom: 10px;
 }
@@ -283,7 +281,7 @@ a {
   color: var(--empty);
 }
 
-#recent .cards-image.first {
+/* #recent .cards-image.first {
   background-image: url(../img/metal_lifting.jpg);
 }
 
@@ -305,7 +303,7 @@ a {
 
 #recent .cards-image.sixth {
   background-image: url(../img/sinister.jpeg);
-}
+} */
 
 /* USER */
 #user {
@@ -329,15 +327,13 @@ a {
 }
 
 #user .col {
-  width: calc(100% / 6);
+  width: calc((100% - 6rem) / 6);
   margin: 0 0.5rem;
   min-height: 120px;
 }
 
 #user .cards-image {
   background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
   aspect-ratio: 1;
   margin-bottom: 10px;
 }
@@ -346,13 +342,13 @@ a {
   color: var(--empty);
 }
 
-#user .cards-image.first {
+/* #user .cards-image.first {
   background-image: url(../img/radar.jpeg);
 }
 
 #user .cards-image.second {
   background-image: url(../img/mixdaily.jpeg);
-}
+} */
 
 /* POP */
 #pop {
@@ -377,17 +373,16 @@ a {
 }
 
 #pop .col {
-  width: calc(100% / 6);
+  width: calc((100% - 6rem) / 6);
   margin: 0 0.5rem;
   min-height: 120px;
 }
 
 #pop .cards-image {
   background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
   aspect-ratio: 1;
   border-radius: 50%;
+  overflow: hidden;
   margin-bottom: 10px;
 }
 
@@ -395,13 +390,13 @@ a {
   color: var(--empty);
 }
 
-#pop .cards-image.first {
+/* #pop .cards-image.first {
   background-image: url(../img/youg.jpeg);
 }
 
 #pop .cards-image.second {
   background-image: url(../img/einaudi.jpeg);
-}
+} */
 
 /* FOOTER */
 #footer {
