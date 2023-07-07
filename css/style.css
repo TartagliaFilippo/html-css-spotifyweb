@@ -175,9 +175,10 @@ a {
   font-weight: bold;
   flex-direction: column;
   gap: 10px;
-  height: 35vh;
+  height: calc(100vh - 500px);
   overflow: auto;
   margin-top: 20px;
+  min-height: 80px;
 }
 
 /* COL_BOTTOM */
@@ -227,7 +228,7 @@ a {
 #header-main {
   height: 80px;
   background-color: rgba(0, 0, 0, 0.5);
-  color: var(--white);
+  color: var(--empty);
   position: sticky;
   top: 0;
   right: 0;
@@ -244,12 +245,12 @@ a {
 }
 
 #header-main .row a {
-  color: var(--white);
+  color: var(--empty);
 }
 
 .btn {
   padding: 10px 20px;
-  border: 3px solid var(--white);
+  border: 3px solid var(--empty);
   border-radius: 30px;
 }
 
