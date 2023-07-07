@@ -11,6 +11,7 @@
   --filler: #c1c1c1;
   --wrapper: #343333;
   --main-content: #131526;
+  --hover: #2fff0c;
 
   /* MISURE STANDARD */
   --margin-s: 5px;
@@ -62,6 +63,7 @@ a {
 /* BAR */
 .progress-bar {
   min-width: 370px;
+  cursor: pointer;
 }
 
 .progress-bar.small {
@@ -105,7 +107,6 @@ a {
   background-color: var(--black);
   color: var(--empty);
   width: 300px;
-  padding: 0 1rem;
   position: fixed;
   left: 0;
   top: 0;
@@ -128,14 +129,17 @@ a {
 
 .side-st .image img {
   width: 50%;
+  padding: 0 1rem;
 }
 
 .side-st .items {
   display: flex;
   align-items: center;
   gap: 5px;
+  padding: 0 1rem;
 
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .side-st .items-svg {
@@ -148,6 +152,10 @@ a {
 }
 
 /* SIDE-ND */
+.col-top > .side-nd {
+  padding: 0 1rem;
+}
+
 .side-nd h4 {
   color: var(--white);
   margin: 20px 0;
@@ -157,6 +165,7 @@ a {
   display: flex;
   align-items: center;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .side-nd .new-playlist button {
@@ -166,6 +175,7 @@ a {
   height: 40px;
   aspect-ratio: 1;
   border: none;
+  border-radius: 3px;
   margin-right: 5px;
 }
 
@@ -179,10 +189,15 @@ a {
   min-height: 80px;
 }
 
+.side-nd li {
+  cursor: pointer;
+}
+
 /* COL_BOTTOM */
 .col-bottom {
   display: flex;
   flex-direction: column;
+  padding: 0 1rem;
 }
 
 .col-bottom .items {
@@ -193,6 +208,7 @@ a {
 
 .col-bottom .items:first-child {
   border-bottom: 1px solid var(--filler);
+  cursor: pointer;
 }
 
 .col-bottom .items:last-child p {
@@ -266,7 +282,11 @@ a {
 #main-content ul {
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
+}
+
+#main-content .nav-main .nav-items {
+  cursor: pointer;
 }
 
 /* RECENT */
@@ -400,6 +420,7 @@ a {
 
 .card-left .image {
   margin-right: 10px;
+  cursor: pointer;
 }
 
 #footer .col {
@@ -432,6 +453,7 @@ a {
 
 .card-right .icons {
   margin: 10px;
+  cursor: pointer;
 }
 
 .card-top {
@@ -444,6 +466,18 @@ a {
 .card-bottom {
   justify-content: center;
   align-items: center;
+}
+
+.card-left .exhibit h5 {
+  cursor: pointer;
+}
+
+.card-left .exhibit p {
+  cursor: pointer;
+}
+
+#footer .col:last-child .icons {
+  cursor: pointer;
 }
 
 /* STYLE */
@@ -459,6 +493,10 @@ a {
 
 .card-left .exhibit p {
   font-size: 10px;
+}
+
+.card-top .icons {
+  cursor: pointer;
 }
 
 .card-top .icons:nth-child(3) {
@@ -630,7 +668,82 @@ a {
 }
 
 /* HOVER */
+
+/* SIDE-BAR */
+/* FIRST */
+.side-st .items:hover {
+  color: var(--white);
+  box-shadow: inset 3px 0px 0px 0px #2fff0c;
+}
+
+/* SECOND */
+.side-nd .new-playlist:hover button {
+  background-color: var(--white);
+  scale: 1.1;
+}
+
+.side-nd .new-playlist:hover {
+  color: var(--white);
+}
+
+.side-nd li:hover {
+  color: var(--white);
+  list-style-type: square;
+}
+
+/* BOTTOM */
+.col-bottom .items:first-child:hover {
+  color: var(--white);
+}
+
+/* HEADER */
+#header-main .row .btn:hover {
+  color: var(--white);
+  border: 3px solid var(--white);
+  scale: 1.1;
+}
+
 /* MAIN */
+#main-content .nav-main .nav-items:hover {
+  color: var(--white);
+  box-shadow: inset 0px -3px 0px 0px #2fff0c;
+}
+
+/* FOOTER */
+.card-left .image:hover {
+  scale: 1.1;
+}
+
+.card-left .exhibit h5:hover {
+  font-size: 15px;
+}
+
+.card-left .exhibit p:hover {
+  color: var(--white);
+}
+
+.card-right .icons:hover {
+  color: var(--white);
+}
+
+.card-top .icons:hover {
+  color: var(--white);
+  scale: 1.1;
+}
+
+.progress-bar:hover .bar-filler {
+  background-color: var(--hover);
+}
+
+.progress-bar:hover .filler-ball {
+  display: block;
+}
+
+#footer .col:last-child .icons:hover {
+  color: var(--white);
+}
+
+/* OPACITY */
 #recent .cards-image.first:hover {
   opacity: 0.3;
 }
