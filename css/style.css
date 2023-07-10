@@ -60,6 +60,14 @@ a {
   padding: 0 var(--margin-m);
 }
 
+.icon-hover {
+  font-size: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /* BAR */
 .progress-bar {
   min-width: 370px;
@@ -315,6 +323,7 @@ a {
   background-size: 100%;
   aspect-ratio: 1;
   margin-bottom: 10px;
+  position: relative;
 }
 
 #recent .cards p {
@@ -353,6 +362,7 @@ a {
   background-size: 100%;
   aspect-ratio: 1;
   margin-bottom: 10px;
+  position: relative;
 }
 
 #user .cards p {
@@ -394,6 +404,7 @@ a {
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 10px;
+  position: relative;
 }
 
 #pop .cards p {
@@ -616,6 +627,11 @@ a {
     width: calc((100% - 2rem) / 2);
     min-height: 100px;
   }
+
+  /* HOVER */
+  .icon-hover {
+    font-size: 3rem;
+  }
 }
 
 /* XS */
@@ -667,6 +683,11 @@ a {
   #main {
     left: 50px;
     width: calc(100% - 50px);
+  }
+
+  /* HOVER */
+  .icon-hover {
+    font-size: 4rem;
   }
 }
 
@@ -746,12 +767,20 @@ a {
   color: var(--white);
 }
 
-/* OPACITY */
-#recent .cards-image.first:hover {
+/* OPACITY CARDS*/
+.cards-image:hover img {
   opacity: 0.3;
 }
 
-#recent .cards-image.second:hover {
+.cards-image:hover i {
+  display: block;
+}
+
+/* /* #recent .cards-image.first:hover {
+  opacity: 0.3;
+} */
+
+/* #recent .cards-image.second:hover {
   opacity: 0.3;
 }
 
@@ -785,4 +814,4 @@ a {
 
 #pop .cards-image.second:hover {
   opacity: 0.3;
-}
+} */
