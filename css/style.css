@@ -308,6 +308,7 @@ a {
   width: calc((100% - 6rem) / 6);
   margin: 0 0.5rem;
   min-height: 120px;
+  text-align: center;
 }
 
 #recent .cards-image {
@@ -345,6 +346,7 @@ a {
   width: calc((100% - 6rem) / 6);
   margin: 0 0.5rem;
   min-height: 120px;
+  text-align: center;
 }
 
 #user .cards-image {
@@ -383,6 +385,7 @@ a {
   width: calc((100% - 6rem) / 6);
   margin: 0 0.5rem;
   min-height: 120px;
+  text-align: center;
 }
 
 #pop .cards-image {
